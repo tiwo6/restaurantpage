@@ -6,7 +6,8 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    clean: true,  // This ensures that the 'dist' directory is cleaned before each build
+    clean: true,
+    publicPath: ''  // Ensure this is correctly set
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -31,5 +32,5 @@ module.exports = {
     open: true,
     hot: true,
   },
-  mode: 'development', // Ensure mode is set to development
+  mode: 'development',
 };

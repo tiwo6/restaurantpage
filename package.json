@@ -1,17 +1,13 @@
 {
-  "name": "package",
+  "name": "restaurant-page",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production",
     "start": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
-  },
-  "repository": {
-    "type": "git",
-    "url": "restaurantpage"
   },
   "author": "",
   "license": "ISC",
